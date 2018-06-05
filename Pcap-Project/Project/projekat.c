@@ -343,7 +343,7 @@ void packet_handler_eth(unsigned char *param, const struct pcap_pkthdr* packet_h
 
 	unsigned char * custom_header = packet_data + sizeof(ethernet_header) + sizeof(ip_header) + sizeof(udp_header) - 4;
 
-	if (ih->src_addr[0] == 192 && ih->src_addr[1] == 168 && ih->src_addr[2] == 0 && ih->src_addr[3] == 52 && src_port == 8080 && strcmp(custom_header, "BokaMare") == 0)
+	if (ih->src_addr[0] == 10 && ih->src_addr[1] == 81 && ih->src_addr[2] == 31 && ih->src_addr[3] == 59 && src_port == 8080 && strcmp(custom_header, "BokaMare") == 0)
 	{
 		long id = ((*(packet_data + 51)) << 32) + ((*(packet_data + 52)) << 24) + ((*(packet_data + 53)) << 16) + ((*(packet_data + 54)) << 8) + *(packet_data + 55);
 		sem_wait(&semaphore);
@@ -409,7 +409,7 @@ void packet_handler_wifi(unsigned char *param, const struct pcap_pkthdr* packet_
 
 	unsigned char * custom_header = packet_data + sizeof(ethernet_header) + sizeof(ip_header) + sizeof(udp_header) - 4;
 
-	if (ih->src_addr[0] == 192 && ih->src_addr[1] == 168 && ih->src_addr[2] == 2 && ih->src_addr[3] == 20 && src_port == 8080 && strcmp(custom_header, "BokaMare") == 0)
+	if (ih->src_addr[0] == 192 && ih->src_addr[1] == 168 && ih->src_addr[2] == 123 && ih->src_addr[3] == 16 && src_port == 8080 && strcmp(custom_header, "BokaMare") == 0)
 	{
 
 		long id = ((*(packet_data + 51)) << 32) + ((*(packet_data + 52)) << 24) + ((*(packet_data + 53)) << 16) + ((*(packet_data + 54)) << 8) + *(packet_data + 55);

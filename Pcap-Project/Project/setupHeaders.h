@@ -31,17 +31,17 @@ unsigned char * setup_ipv4_header(unsigned int * len, unsigned char * packet_dat
 unsigned char * setup_udp_header(unsigned int * len, unsigned char * packet_data);
 unsigned char * setup_custom_header(unsigned int * len, unsigned char * packet_data, long order_number);
 
-const unsigned char dst_mac_address[] = { 0x4C , 0x72 , 0xB9 , 0x11 , 0x63 , 0xD4 };		//Ethernet Dutja
-const unsigned char dst_mac_address_wifi[] = { 0x44 , 0x6D , 0x57 , 0xEA , 0x51 , 0xD8 };	//WiFi Dutja
+const unsigned char dst_mac_address[] = { 0x2c , 0x4d , 0x54 , 0x56 , 0x9a , 0x6b };		//Ethernet Bojan
+const unsigned char dst_mac_address_wifi[] = { 0x00 , 0x0f , 0x60 , 0x08 , 0x28 , 0xae };	//WiFi Bojan
 
-const unsigned char src_mac_address[] = { 0xC8 , 0x0A , 0xA9 , 0x68 , 0xA1 , 0x05 };		//Ethernet Mitzi
-const unsigned char src_mac_address_wifi[] = { 0xF0 , 0x7B , 0xCB , 0x7C , 0xB3 , 0x2B };	//WiFi Mitzi
+const unsigned char src_mac_address[] = { 0x2c , 0x4d , 0x54 , 0xcf , 0x3a , 0x88 };		//Ethernet Marko
+const unsigned char src_mac_address_wifi[] = { 0x00 , 0x0f , 0x60 , 0x08 , 0x49 , 0xe9 };	//WiFi Marko
 
-const unsigned char dst_ipv4_address[] = { 192 , 168 , 0 , 52 };	//Ethernet
-const unsigned char src_ipv4_address[] = { 192 , 168 , 0 , 40 };	//Ethernet
+const unsigned char dst_ipv4_address[] = { 10 , 81 , 31 , 59 };	//Ethernet
+const unsigned char src_ipv4_address[] = { 10 , 81 , 31 , 54 };	//Ethernet
 
-const unsigned char dst_ipv4_address_wifi[] = { 192 , 168 , 2 , 20 };	//WiFi
-const unsigned char src_ipv4_address_wifi[] = { 192 , 168 , 2 , 30 };	//WiFi
+const unsigned char dst_ipv4_address_wifi[] = { 192 , 168 , 123 , 16 };	//WiFi
+const unsigned char src_ipv4_address_wifi[] = { 192 , 168 , 123 , 1 };	//WiFi
 
 
 
